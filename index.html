@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body onload="main()">
+        <div class="p-title">Virtual Piano</div>
+        <div class="p-full-screen" onclick="toggleFullScreen()"></div>
+        <div class="p-key-container">
+            <div class="p-switch-button-container">
+                <div class="p-button p-button-active">Notes</div>
+                <div class="p-button">Letters</div>    
+            </div>
+
+            <div class="p-top-key-center-container">
+                <div class="p-top-key-container">
+                    <div class="p-top-key-dies p-top-key-left">
+                        <div class="p-top-key-item">
+                            <div class="p-key-item-text">c#</div>    
+                            <div class="p-key-item" onclick="play('cc')"></div>
+                        </div>
+                        <div class="p-top-key-item">
+                            <div class="p-key-item-text">d#</div>    
+                            <div class="p-key-item" onclick="play('dd')"></div>
+                        </div>
+                    </div>
+                    <div class="p-top-key-dies p-top-key-right">
+                        <div class="p-top-key-item">
+                            <div class="p-key-item-text">f#</div>    
+                            <div class="p-key-item" onclick="play('ff')"></div>
+                        </div>
+                        <div class="p-top-key-item">
+                            <div class="p-key-item-text">g#</div>    
+                            <div class="p-key-item" onclick="play('gg')"></div>
+                        </div>
+                        <div class="p-top-key-item">
+                            <div class="p-key-item-text">a#</div>    
+                            <div class="p-key-item" onclick="play('aa')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-bottom-key-container">
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('c')"></div>
+                    <div class="p-key-item-text">c</div>
+                </div>
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('d')"></div>
+                    <div class="p-key-item-text">d</div>
+                </div>
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('e')"></div>
+                    <div class="p-key-item-text">e</div>
+                </div>
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('f')"></div>
+                    <div class="p-key-item-text">f</div>
+                </div>
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('g')"></div>
+                    <div class="p-key-item-text">g</div>
+                </div>
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('a')"></div>
+                    <div class="p-key-item-text">a</div>
+                </div>
+                <div class="p-bottom-key-item">
+                    <div class="p-key-item" onclick="play('b')"></div>
+                    <div class="p-key-item-text">b</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="application/javascript" src="js/main.js"></script>
+    </body>
+</html>
